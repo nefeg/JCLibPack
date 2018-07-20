@@ -1,0 +1,31 @@
+{
+  "name": "umbrella-evgeny-nefedkin/libjc",
+  "description": "JC lib pack",
+  "keywords": ["tools", "utils"],
+  "type": "library",
+  "license": "MIT",
+  "version": "0.1-dev",
+  "authors": [
+    { "name": "Evgeny Nefedkin",
+      "email": "evgeny.nefedkin@umbrellait.com"
+    }
+  ],
+
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/umbrella-evgeny-nefedkin/JCLibPack.git"
+    }
+  ],
+
+  "require": {
+    "php": "^7.1.3",
+    "jms/serializer-bundle": "^2.4",
+    "symfony/expression-language": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Umbrella\\JCLibPack\\": ""
+    }
+  }
+}
