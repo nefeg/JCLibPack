@@ -258,28 +258,54 @@ class JCHelper
         return $date->setTimezone(new \DateTimeZone($serverTimeZone));
     }
 
-    /**
-     * @param $value
-     * @param int $min
-     * @param int $max
-     * @param int $default
-     * @return int
-     * @throws \Exception
-     */
-    static function getLimitIntValue($value, $min = 0, $max = 50, $default = 0) : int {
+	/**
+	 * @param $value
+	 * @param int $min
+	 * @param int $max
+	 * @param int $default
+	 * @return int
+	 * @throws \Exception
+	 */
+	static function getLimitNumericValue($value, $min = 0, $max = 50, $default = 0) {
 
-        if($min > $max)
-            throw new \Exception('Max limit should be more than min limit.');
+		if($min > $max)
+			throw new \Exception('Max limit should be more than min limit.');
 
-        if(!is_null($value)) {
-            $value = !is_null($min) && $value < $min ? $min : $value;
-            $value = !is_null($max) && $value > $max ? $max : $value;
-        } else {
-            $value = $default;
-        }
+		if(!is_null($value)) {
+			$value = !is_null($min) && $value < $min ? $min : $value;
+			$value = !is_null($max) && $value > $max ? $max : $value;
+		} else {
+			$value = $default;
+		}
 
-        return (int) $value;
-    }
+		return $value;
+	}
+
+	/**
+	 * @param $value
+	 * @param int $min
+	 * @param int $max
+	 * @param int $default
+	 * @return int
+	 * @throws \Exception
+	 */
+	static function getLimitIntValue($value, $min = 0, $max = 50, $default = 0) : int {
+
+		return (int) static::getLimitNumericValue($value, $min, $max, $default);
+	}
+
+	/**
+	 * @param     $value
+	 * @param int $min
+	 * @param int $max
+	 * @param int $default
+	 * @return float
+	 * @throws \Exception
+	 */
+	static function getLimitFloatValue($value, $min = 0, $max = 50, $default = 0) : float {
+
+		return (float) static::getLimitNumericValue($value, $min, $max, $default);
+	}
 
     /**
      * @param string $str
