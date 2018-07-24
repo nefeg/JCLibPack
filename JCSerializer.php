@@ -14,13 +14,15 @@ use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 class JCSerializer
 {
 	/**
-	 * @param      $data
-	 * @param bool $serializeNull
+	 * @param       $data
+	 * @param bool  $serializeNull
+	 * @param array $groups
+	 * @param bool  $useExpressions
 	 * @return string
 	 */
-	static public function serializeToJSON($data, bool $serializeNull = true) :string{
+	static public function serializeToJSON($data, bool $serializeNull = true, array $groups = [], bool $useExpressions = true) :string{
 
-		return static::serialize($data, 'json', $serializeNull);
+		return static::serialize($data, 'json', $serializeNull, $groups, $useExpressions);
 	}
 
 	/**
