@@ -20,7 +20,7 @@ class JCSerializer
 	 * @param bool  $useExpressions
 	 * @return string
 	 */
-	static public function serializeToJSON($data, bool $serializeNull = true, array $groups = [], bool $useExpressions = true) :string{
+	static public function serializeToJSON($data, array $groups = [], bool $serializeNull = true, bool $useExpressions = true) :string{
 
 		return static::serialize($data, 'json', $serializeNull, $groups, $useExpressions);
 	}
