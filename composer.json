@@ -4,7 +4,7 @@
   "keywords": ["tools", "utils"],
   "type": "library",
   "license": "MIT",
-  "version": "0.3-dev",
+  "version": "0.4-dev",
   "authors": [
     { "name": "Evgeny Nefedkin",
       "email": "evgeny.nefedkin@umbrellait.com"
