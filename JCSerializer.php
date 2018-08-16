@@ -26,6 +26,19 @@ class JCSerializer
 	}
 
 	/**
+	 * @param       $data
+	 * @param array $groups
+	 * @param bool  $serializeNull
+	 * @param bool  $useExpressions
+	 * @return array
+	 */
+	static public function serializeToArray($data, array $groups = [], bool $serializeNull = true, bool $useExpressions = true) :array{
+		return is_array($data) ? $data : static::deserialize(
+			static::serialize($data, 'json', $serializeNull, $groups, $useExpressions)
+		);
+	}
+
+	/**
 	 * @param        $data
 	 * @param string $format
 	 * @param bool   $serializeNull
