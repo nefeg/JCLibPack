@@ -6,7 +6,7 @@
  * Time: 12:07
  */
 
-namespace App;
+namespace Umbrella\JCLibPack;
 
 
 /**
