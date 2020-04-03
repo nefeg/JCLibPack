@@ -1,12 +1,13 @@
 <?php
-namespace Umbrella\JCLibPack;
+
+namespace JCLibPack;
 
 use DateTimeZone;
 
 /**
  * Class JCDateTime
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 class JCDateTime extends \DateTime implements JCDateTimeInterface
 {

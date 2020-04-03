@@ -1,13 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 28.09.2018
- * Time: 12:07
- */
 
-namespace Umbrella\JCLibPack;
+namespace JCLibPack;
 
+use Exception;
 
 /**
  * Class JCMediaHelper
@@ -61,7 +56,7 @@ class JCMediaHelper
 	 * @param int    $hMax
 	 * @param string $type (jpeg|png|gif|auto)
 	 * @return string
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static public function resizeImage(string $filename, int $wMax, int $hMax, string $type = 'auto') :string
 	{
@@ -145,7 +140,7 @@ class JCMediaHelper
 	 * @param int    $wMax
 	 * @param int    $hMax
 	 * @return string
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static public function makeThumbnail(string $filename, int $wMax, int $hMax, int $position = 1)
 	{

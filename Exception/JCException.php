@@ -1,5 +1,6 @@
 <?php
-namespace Umbrella\JCLibPack\Exception;
+
+namespace JCLibPack\Exception;
 
 class JCException extends \Exception
 {

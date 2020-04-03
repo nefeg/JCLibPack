@@ -1,15 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 03.02.16
- * Time: 13:48
- */
 
-namespace Umbrella\JCLibPack;
+namespace JCLibPack;
 
-use Umbrella\JCLibPack\Exception\JCException;
-
+use JCLibPack\Exception\JCException;
 
 /**
  * Class JCJson
@@ -70,7 +63,7 @@ class JCJson implements  JCStringInterface, JCArrayInterface, \Serializable, \Ar
 	 * @param int  $depth
 	 * @param int  $options
 	 * @return string
-	 * @throws \Umbrella\JCLibPack\Exception\JCException
+	 * @throws JCException
 	 */
 	static protected function _normalizeData($source, $assoc = true, $depth = 512, $options = 0){
 
@@ -176,7 +169,7 @@ class JCJson implements  JCStringInterface, JCArrayInterface, \Serializable, \Ar
 	 *
 	 * @param mixed $offset
 	 * @param mixed $value
-	 * @return \Umbrella\JCLibPack\JCJson
+	 * @return JCJson
 	 */
 	public function offsetSet($offset, $value) {
 		$this->source[$offset] = $value;
@@ -189,7 +182,7 @@ class JCJson implements  JCStringInterface, JCArrayInterface, \Serializable, \Ar
 	 *
 	 * @param $key
 	 * @param $value
-	 * @return \Umbrella\JCLibPack\JCJson
+	 * @return JCJson
 	 */
 	public function set($key, $value) {
 		
@@ -200,7 +193,7 @@ class JCJson implements  JCStringInterface, JCArrayInterface, \Serializable, \Ar
 	 * Offset to unset
 	 *
 	 * @param mixed $offset
-	 * @return \Umbrella\JCLibPack\JCJson
+	 * @return JCJson
 	 */
 	public function offsetUnset($offset) {
 		unset($this->source[$offset]);
@@ -210,7 +203,7 @@ class JCJson implements  JCStringInterface, JCArrayInterface, \Serializable, \Ar
 
 	/**
 	 * @param $key
-	 * @return \Umbrella\JCLibPack\JCJson
+	 * @return JCJson
 	 */
 	public function rm($key) {
 		return $this->offsetUnset($key);

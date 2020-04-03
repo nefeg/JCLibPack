@@ -1,10 +1,11 @@
 <?php
-namespace Umbrella\JCLibPack;
+
+namespace JCLibPack;
 
 /**
  * Interface JCDateTimeInterface
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 interface JCDateTimeInterface extends JCStringInterface, \DateTimeInterface
 {

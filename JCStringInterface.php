@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 07.04.16
- * Time: 16:04
- */
 
-namespace Umbrella\JCLibPack;
+namespace JCLibPack;
 
 /**
  * Interface JellyStringInterface

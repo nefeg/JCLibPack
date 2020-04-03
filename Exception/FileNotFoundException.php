@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 24.07.2018
- * Time: 0:29
- */
 
-namespace Umbrella\JCLibPack\Exception;
+namespace JCLibPack\Exception;
 
 /**
  * Thrown when a file was not found.

@@ -1,10 +1,11 @@
 <?php
-namespace Umbrella\JCLibPack;
+
+namespace JCLibPack;
 
 /**
  * Interface JCArrayInterface
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 interface JCArrayInterface
 {

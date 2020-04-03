@@ -1,13 +1,14 @@
 <?php
-namespace Umbrella\JCLibPack;
+namespace JCLibPack;
 
-use Umbrella\JCLibPack\Exception\JCException;
+use Exception;
+use JCLibPack\Exception\JCException;
 
 /**
  * Class JCCmdLib
  * Wrapper for symfony's console commands
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 class JCCmdLib
 {
@@ -29,7 +30,7 @@ class JCCmdLib
 	 * @param array  $options
 	 * @param array  $noneValueOptions
 	 * @return string
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static public function compileCmd(string $cmd, string $env, array $arguments = [], array $options = [], array $noneValueOptions = []){
 
@@ -57,7 +58,7 @@ class JCCmdLib
 	/**
 	 * @param array $options
 	 * @return string
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static public function compileOptions(array $options) {
 
@@ -75,7 +76,7 @@ class JCCmdLib
 	 * @param string $key
 	 * @param        $value
 	 * @return string
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static private function compileOption(string $key, $value) :string
 	{

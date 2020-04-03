@@ -1,5 +1,6 @@
 <?php
-namespace Umbrella\JCLibPack;
+
+namespace JCLibPack;
 
 use JMS\Serializer\Expression\ExpressionEvaluator;
 use JMS\Serializer\SerializationContext;
@@ -9,7 +10,7 @@ use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 /**
  * Class JCSerializer
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 class JCSerializer
 {

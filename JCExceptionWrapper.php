@@ -1,10 +1,11 @@
 <?php
-namespace Umbrella\JCLibPack;
+
+namespace JCLibPack;
 
 /**
  * Class JCExceptionWrapper
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 abstract class JCExceptionWrapper extends \Exception
 {

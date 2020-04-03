@@ -1,11 +1,13 @@
 <?php
-namespace Umbrella\JCLibPack;
 
+namespace JCLibPack;
+
+use Exception;
 
 /**
  * Class JCCmd
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 class JCCmd
 {
@@ -50,7 +52,7 @@ class JCCmd
 
 	/**
 	 * @return string
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	public function __toString() :string{
 		return $this->compile();
@@ -58,7 +60,7 @@ class JCCmd
 
 	/**
 	 * @return string
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	public function compile() :string{
 

@@ -1,11 +1,11 @@
 <?php
-namespace Umbrella\JCLibPack;
 
+namespace JCLibPack;
 
 /**
  * Interface JCIdentifyInterface
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 interface JCIdentifyInterface
 {

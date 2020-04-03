@@ -1,15 +1,15 @@
 <?php
 
-namespace Umbrella\JCLibPack;
-use Umbrella\JCLibPack\Exception\AccessDeniedException;
-use Umbrella\JCLibPack\Exception\FileNotFoundException;
+namespace JCLibPack;
 
+use JCLibPack\Exception\AccessDeniedException;
+use JCLibPack\Exception\FileNotFoundException;
 
 /**
  * Class JCMimeTypeGuesser
  *
  * @package App\Jelly\System\File\MimeType
- * @see \Symfony\Component\HttpFoundation\File\MimeType\FileinfoMimeTypeGuesser
+ * @see \Symfony\Component\Mime\FileinfoMimeTypeGuesser
  */
 class JCMimeTypeGuesser
 {

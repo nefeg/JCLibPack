@@ -1,10 +1,14 @@
 <?php
-namespace Umbrella\JCLibPack;
+
+namespace JCLibPack;
+
+use Exception;
+use JCLibPack\Exception\TypeMismatchException;
 
 /**
  * Class JCHelper
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 class JCHelper
 {
@@ -98,13 +102,13 @@ class JCHelper
 	 * @param $needle
 	 * @param $hash
 	 * @return bool
-	 * @throws \TypeMismatchException
+	 * @throws TypeMismatchException
 	 */
     static function isUniqueId($needle, $hash){
 
         foreach($hash as $item){
         	if (!$item instanceof JCIdentifyInterface)
-		        throw new \TypeMismatchException("Expected JCIdentifyInterface");
+		        throw new TypeMismatchException("Expected JCIdentifyInterface");
 
             if($item->getId() == $needle)
                 return false;
@@ -183,7 +187,7 @@ class JCHelper
 	 * @param string $excludes
 	 * @param string $replace
 	 * @return string
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static public function generateCryptCode($length = 32, $salt = true, $excludes = '/\\=', $replace = '___'){
 		if(!isset($length) || intval($length) <= 8 ){
@@ -264,7 +268,7 @@ class JCHelper
 	 * @param int $max
 	 * @param int $default
 	 * @return int
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static function getLimitNumericValue($value, $min = 0, $max = 50, $default = 0) {
 
@@ -287,7 +291,7 @@ class JCHelper
 	 * @param int $max
 	 * @param int $default
 	 * @return int
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static function getLimitIntValue($value, $min = 0, $max = 50, $default = 0) : int {
 
@@ -300,7 +304,7 @@ class JCHelper
 	 * @param int $max
 	 * @param int $default
 	 * @return float
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	static function getLimitFloatValue($value, $min = 0, $max = 50, $default = 0) : float {
 

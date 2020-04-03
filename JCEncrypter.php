@@ -1,17 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omni
- * Date: 29.06.2018
- * Time: 18:57
- */
 
-namespace Umbrella\JCLibPack;
+namespace JCLibPack;
 
 /**
  * Class JCEncrypter
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  * @see http://php.net/manual/ru/function.openssl-private-decrypt.php
  */
 class JCEncrypter

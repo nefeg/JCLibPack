@@ -1,12 +1,11 @@
 <?php
 
-namespace Umbrella\JCLibPack;
-
+namespace JCLibPack;
 
 /**
  * Class JCArrayExtractor
  *
- * @package Umbrella\JCLibPack
+ * @package JCLibPack
  */
 class JCArrayExtractor
 {
