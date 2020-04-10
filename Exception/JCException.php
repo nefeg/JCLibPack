@@ -1,6 +1,6 @@
 <?php
 
-namespace JCLibPack\Exception;
+namespace Aimchat\JCLibPack\Exception;
 
 class JCException extends \Exception
 {

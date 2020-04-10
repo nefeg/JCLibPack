@@ -1,6 +1,6 @@
 <?php
 
-namespace JCLibPack\Exception;
+namespace Aimchat\JCLibPack\Exception;
 
 /**
  * Thrown when the access on a file was denied.

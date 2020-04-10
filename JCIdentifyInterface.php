@@ -1,11 +1,11 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 /**
  * Interface JCIdentifyInterface
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 interface JCIdentifyInterface
 {

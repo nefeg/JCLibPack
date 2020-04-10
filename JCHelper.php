@@ -1,14 +1,14 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
+use Aimchat\JCLibPack\Exception\TypeMismatchException;
 use Exception;
-use JCLibPack\Exception\TypeMismatchException;
 
 /**
  * Class JCHelper
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 class JCHelper
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 use DateTimeZone;
 
 /**
  * Class JCDateTime
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 class JCDateTime extends \DateTime implements JCDateTimeInterface
 {

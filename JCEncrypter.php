@@ -1,11 +1,11 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 /**
  * Class JCEncrypter
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  * @see http://php.net/manual/ru/function.openssl-private-decrypt.php
  */
 class JCEncrypter

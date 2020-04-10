@@ -1,11 +1,11 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 /**
  * Class JCExceptionWrapper
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 abstract class JCExceptionWrapper extends \Exception
 {

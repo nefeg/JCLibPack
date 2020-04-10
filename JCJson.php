@@ -1,8 +1,8 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
-use JCLibPack\Exception\JCException;
+use Aimchat\JCLibPack\Exception\JCException;
 
 /**
  * Class JCJson

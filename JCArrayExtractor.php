@@ -1,11 +1,11 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 /**
  * Class JCArrayExtractor
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 class JCArrayExtractor
 {

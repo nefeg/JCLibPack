@@ -1,11 +1,11 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 /**
  * Interface JCDateTimeInterface
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 interface JCDateTimeInterface extends JCStringInterface, \DateTimeInterface
 {

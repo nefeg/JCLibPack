@@ -1,9 +1,9 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
-use JCLibPack\Exception\AccessDeniedException;
-use JCLibPack\Exception\FileNotFoundException;
+use Aimchat\JCLibPack\Exception\AccessDeniedException;
+use Aimchat\JCLibPack\Exception\FileNotFoundException;
 
 /**
  * Class JCMimeTypeGuesser

@@ -1,11 +1,11 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 /**
  * Interface JCArrayInterface
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 interface JCArrayInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 use Exception;
 
 /**
  * Class JCCmd
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 class JCCmd
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace JCLibPack\Exception;
+namespace Aimchat\JCLibPack\Exception;
 
 /**
  * Thrown when a file was not found.

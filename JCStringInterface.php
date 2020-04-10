@@ -1,6 +1,6 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 /**
  * Interface JellyStringInterface

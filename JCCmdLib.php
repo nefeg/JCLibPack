@@ -1,14 +1,14 @@
 <?php
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
+use Aimchat\JCLibPack\Exception\JCException;
 use Exception;
-use JCLibPack\Exception\JCException;
 
 /**
  * Class JCCmdLib
  * Wrapper for symfony's console commands
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 class JCCmdLib
 {

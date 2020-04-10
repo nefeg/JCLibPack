@@ -1,6 +1,6 @@
 <?php
 
-namespace JCLibPack;
+namespace Aimchat\JCLibPack;
 
 use JMS\Serializer\Expression\ExpressionEvaluator;
 use JMS\Serializer\SerializationContext;
@@ -10,7 +10,7 @@ use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 /**
  * Class JCSerializer
  *
- * @package JCLibPack
+ * @package Aimchat\JCLibPack
  */
 class JCSerializer
 {
