@@ -1,20 +1,15 @@
 {
-  "name": "umbrella-evgeny-nefedkin/libjc",
+  "name": "path-to-repo/libjc",
   "description": "JC lib pack",
   "keywords": ["tools", "utils"],
   "type": "library",
   "license": "MIT",
   "version": "0.10-dev",
-  "authors": [
-    { "name": "Evgeny Nefedkin",
-      "email": "evgeny.nefedkin@umbrellait.com"
-    }
-  ],
 
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/umbrella-evgeny-nefedkin/JCLibPack.git"
+      "url": "set path to repo git here"
     }
   ],
 
